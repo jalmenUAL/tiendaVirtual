@@ -33,4 +33,12 @@ public class VistaListaproductos extends PolymerTemplate<VistaListaproductos.Vis
     public interface VistaListaproductosModel extends TemplateModel {
         // Add setters and getters for template properties here.
     }
+
+	public HorizontalLayout getListaProductos() {
+		return listaProductos;
+	}
+
+	public void setListaProductos(HorizontalLayout listaProductos) {
+		this.listaProductos = listaProductos;
+	}
 }

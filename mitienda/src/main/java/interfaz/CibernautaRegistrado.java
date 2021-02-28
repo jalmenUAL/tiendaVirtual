@@ -6,7 +6,6 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class CibernautaRegistrado extends Cibernauta {
 
-	
 	public CabeceraRegistrado ccbn;
 	public VerticalLayout layout;
 	public Carrito cr;
@@ -18,20 +17,19 @@ public class CibernautaRegistrado extends Cibernauta {
 		 layout.add(ccbn);
 		 cr = new Carrito();	
 		  
+		 
 		 ccbn.getVerCarrito().addClickListener(new ComponentEventListener() {
 				@Override
-				public void onComponentEvent(ComponentEvent event) {
-					 
-								
+				public void onComponentEvent(ComponentEvent event) {		
 					layout.add(cr);
 					
 				}
 			});
+		 
+		 
 		 cr.getCerrarCarrito().addClickListener(new ComponentEventListener() {
 				@Override
-				public void onComponentEvent(ComponentEvent event) {
-					 
-								
+				public void onComponentEvent(ComponentEvent event) {			
 					layout.remove(cr);
 					
 				}

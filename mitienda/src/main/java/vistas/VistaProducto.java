@@ -55,4 +55,84 @@ public class VistaProducto extends PolymerTemplate<VistaProducto.VistaProductoMo
     public interface VistaProductoModel extends TemplateModel {
         // Add setters and getters for template properties here.
     }
+
+	public Element getLayoutProducto() {
+		return layoutProducto;
+	}
+
+	public void setLayoutProducto(Element layoutProducto) {
+		this.layoutProducto = layoutProducto;
+	}
+
+	public Image getImagenProducto() {
+		return imagenProducto;
+	}
+
+	public void setImagenProducto(Image imagenProducto) {
+		this.imagenProducto = imagenProducto;
+	}
+
+	public HorizontalLayout getPieProducto() {
+		return pieProducto;
+	}
+
+	public void setPieProducto(HorizontalLayout pieProducto) {
+		this.pieProducto = pieProducto;
+	}
+
+	public Button getAnadirCarrito() {
+		return anadirCarrito;
+	}
+
+	public void setAnadirCarrito(Button anadirCarrito) {
+		this.anadirCarrito = anadirCarrito;
+	}
+
+	public Button getAnadirOferta() {
+		return anadirOferta;
+	}
+
+	public void setAnadirOferta(Button anadirOferta) {
+		this.anadirOferta = anadirOferta;
+	}
+
+	public Button getQuitarOferta() {
+		return quitarOferta;
+	}
+
+	public void setQuitarOferta(Button quitarOferta) {
+		this.quitarOferta = quitarOferta;
+	}
+
+	public Label getLabelPrecio() {
+		return labelPrecio;
+	}
+
+	public void setLabelPrecio(Label labelPrecio) {
+		this.labelPrecio = labelPrecio;
+	}
+
+	public Label getLabelUnidades() {
+		return labelUnidades;
+	}
+
+	public void setLabelUnidades(Label labelUnidades) {
+		this.labelUnidades = labelUnidades;
+	}
+
+	public Label getPrecioProducto() {
+		return precioProducto;
+	}
+
+	public void setPrecioProducto(Label precioProducto) {
+		this.precioProducto = precioProducto;
+	}
+
+	public Label getCantidadProducto() {
+		return cantidadProducto;
+	}
+
+	public void setCantidadProducto(Label cantidadProducto) {
+		this.cantidadProducto = cantidadProducto;
+	}
 }

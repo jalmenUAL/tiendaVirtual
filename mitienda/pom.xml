@@ -4,7 +4,7 @@
     <artifactId>mitienda</artifactId>
     <name>mitienda</name>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
