@@ -1,5 +1,7 @@
 package interfaz;
 
-public class ProductoCarrito extends Producto  {
+import vistas.VistaProductocarrito;
+
+public class ProductoCarrito extends VistaProductocarrito  {
 
 }

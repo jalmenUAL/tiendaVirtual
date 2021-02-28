@@ -35,12 +35,10 @@ public class VistaProducto extends PolymerTemplate<VistaProducto.VistaProductoMo
 	private Button quitarOferta;
 	@Id("labelPrecio")
 	private Label labelPrecio;
-	@Id("labelUnidades")
-	private Label labelUnidades;
+	 
 	@Id("precioProducto")
 	private Label precioProducto;
-	@Id("cantidadProducto")
-	private Label cantidadProducto;
+	 
 
 	/**
      * Creates a new VistaProducto.
@@ -112,13 +110,7 @@ public class VistaProducto extends PolymerTemplate<VistaProducto.VistaProductoMo
 		this.labelPrecio = labelPrecio;
 	}
 
-	public Label getLabelUnidades() {
-		return labelUnidades;
-	}
-
-	public void setLabelUnidades(Label labelUnidades) {
-		this.labelUnidades = labelUnidades;
-	}
+	 
 
 	public Label getPrecioProducto() {
 		return precioProducto;
@@ -128,11 +120,5 @@ public class VistaProducto extends PolymerTemplate<VistaProducto.VistaProductoMo
 		this.precioProducto = precioProducto;
 	}
 
-	public Label getCantidadProducto() {
-		return cantidadProducto;
-	}
-
-	public void setCantidadProducto(Label cantidadProducto) {
-		this.cantidadProducto = cantidadProducto;
-	}
+	 
 }

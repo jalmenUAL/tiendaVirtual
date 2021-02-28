@@ -16,6 +16,9 @@ public class CibernautaRegistrado extends Cibernauta {
 		 layout = this.getLayoutCibernauta().as(VerticalLayout.class);
 		 layout.add(ccbn);
 		 cr = new Carrito();	
+		//TEST
+			ProductoCarrito pc = new ProductoCarrito();
+			cr.anadirProductoCarrio(pc);
 		  
 		 
 		 ccbn.getVerCarrito().addClickListener(new ComponentEventListener() {
@@ -26,14 +29,14 @@ public class CibernautaRegistrado extends Cibernauta {
 				}
 			});
 		 
-		 
 		 cr.getCerrarCarrito().addClickListener(new ComponentEventListener() {
 				@Override
-				public void onComponentEvent(ComponentEvent event) {			
+				public void onComponentEvent(ComponentEvent event) {		
 					layout.remove(cr);
 					
 				}
 			});
+		  
 		 
 	}
 }

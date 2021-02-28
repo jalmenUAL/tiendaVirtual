@@ -24,14 +24,11 @@ public class VistaCarrito extends PolymerTemplate<VistaCarrito.VistaCarritoModel
 	private Element vaadinVerticalLayout;
 	@Id("labelCarrito")
 	private Label labelCarrito;
-	@Id("layoutTotal")
-	private HorizontalLayout layoutTotal;
-	@Id("labelTotal")
-	private Label labelTotal;
-	@Id("totalCarrito")
-	private Label totalCarrito;
 	@Id("cerrarCarrito")
 	private Button cerrarCarrito;
+	@Id("vaadinHorizontalLayout")
+	private HorizontalLayout vaadinHorizontalLayout;
+	 
 
 	/**
      * Creates a new VistaCarrito.
@@ -61,30 +58,6 @@ public class VistaCarrito extends PolymerTemplate<VistaCarrito.VistaCarritoModel
 
 	public void setLabelCarrito(Label labelCarrito) {
 		this.labelCarrito = labelCarrito;
-	}
-
-	public HorizontalLayout getLayoutTotal() {
-		return layoutTotal;
-	}
-
-	public void setLayoutTotal(HorizontalLayout layoutTotal) {
-		this.layoutTotal = layoutTotal;
-	}
-
-	public Label getLabelTotal() {
-		return labelTotal;
-	}
-
-	public void setLabelTotal(Label labelTotal) {
-		this.labelTotal = labelTotal;
-	}
-
-	public Label getTotalCarrito() {
-		return totalCarrito;
-	}
-
-	public void setTotalCarrito(Label totalCarrito) {
-		this.totalCarrito = totalCarrito;
 	}
 
 	public Button getCerrarCarrito() {
