@@ -7,14 +7,13 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Administrador extends Cibernauta {
 
 	public CabeceraAdministrador ccbn;
-	public VerticalLayout layout;
+	 
 	 
 	
 	public Administrador() {
 		
 		 ccbn = new CabeceraAdministrador();	
-		 layout = this.getLayoutCibernauta().as(VerticalLayout.class);
-		 layout.add(ccbn);
+		 this.getLayoutCibernauta().as(VerticalLayout.class).add(ccbn);
 		  
 		 
 	}

@@ -12,7 +12,8 @@ public void anadirProductoCarrio(ProductoCarrito pc) {
 	this.getVaadinVerticalLayout().as(VerticalLayout.class).add(pc);
 }
 
-public void eliminarProductoCarrito(ProductoCarrito pc) {}
+public void eliminarProductoCarrito(ProductoCarrito pc) {
 
-
+	this.getVaadinVerticalLayout().as(VerticalLayout.class).remove(pc);
+}
 }

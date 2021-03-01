@@ -7,8 +7,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class CibernautaRegistrado extends Cibernauta {
 
 	public CabeceraRegistrado ccbn;
-	public VerticalLayout layout;
 	public Carrito cr;
+	public VerticalLayout layout;
 	
 	public CibernautaRegistrado() {
 		
@@ -16,6 +16,7 @@ public class CibernautaRegistrado extends Cibernauta {
 		 layout = this.getLayoutCibernauta().as(VerticalLayout.class);
 		 layout.add(ccbn);
 		 cr = new Carrito();	
+		 
 		//TEST
 			ProductoCarrito pc = new ProductoCarrito();
 			cr.anadirProductoCarrio(pc);

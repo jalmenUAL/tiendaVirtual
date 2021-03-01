@@ -7,9 +7,9 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class CibernautaNoRegistrado extends Cibernauta {
 
-	public CabeceraNoRegistrado ccbn;
-	public VerticalLayout layout;
+	public CabeceraNoRegistrado ccbn;	
 	public Login lg;
+	public VerticalLayout layout;
 	
 	public CibernautaNoRegistrado() {
 		
