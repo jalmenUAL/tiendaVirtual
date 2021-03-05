@@ -6,6 +6,9 @@ import vistas.VistaCarrito;
 
 public class Carrito extends VistaCarrito {
 	
+public Carrito() {
+	super();
+}
 
 public void anadirProductoCarrio(ProductoCarrito pc) {
 	

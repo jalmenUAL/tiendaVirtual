@@ -1,5 +1,7 @@
 package tienda;
 
+import com.vaadin.flow.component.ComponentEvent;
+import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
@@ -10,9 +12,10 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
+import interfaz.Administrador;
 import interfaz.CibernautaNoRegistrado;
 import interfaz.CibernautaRegistrado;
- 
+import interfaz.Login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -44,34 +47,68 @@ public class MainView extends VerticalLayout {
      *
      * @param service The message service. Automatically injected Spring managed bean.
      */
+	
+	CibernautaNoRegistrado cbn = new CibernautaNoRegistrado();
+	
     public MainView() {
 
-    	
-    	
-        CibernautaNoRegistrado cbn = new CibernautaNoRegistrado();
-        
         add(cbn);
+        login();
+        
+    }
+    
+    public void login() {
         
         cbn.lg.getVaadinLoginForm().addLoginListener(e -> {
-    	    
+        	
+        	cbn.layout.remove(cbn.lg);
+        	cbn.layout.add(cbn.ccbn);
+        	
     	    if (e.getUsername().equals("admin")) {
     	    	
-    	    	interfaz.Administrador ad = new interfaz.Administrador();
+    	    	Administrador ad = new Administrador();
     	    	remove(cbn);
     	    	add(ad);
+    	    	ad.ccbn.getSalir().setVisible(true);
+    	    	ad.ccbn.getSalir().addClickListener(new ComponentEventListener() {
+    				@Override
+    				public void onComponentEvent(ComponentEvent event) {
+    					 
+    					cbn.lg = new Login();
+    					login();
+    					remove(ad);
+    					add(cbn);
+    					
+    				}
+    			});
+    	    	
     	    	
     	    }
     	    else if (e.getUsername().equals("usuario")) {
     	    	
     	    	CibernautaRegistrado cr = new CibernautaRegistrado();
     	    	remove(cbn);
-    	    	add(cr);;
+    	    	add(cr);
+    	    	cr.ccbn.getSalir().setVisible(true);
+    	    	cr.ccbn.getSalir().addClickListener(new ComponentEventListener() {
+    				@Override
+    				public void onComponentEvent(ComponentEvent event) {
+    					 
+    					cbn.lg = new Login();
+    					login();
+    					remove(cr);
+    					add(cbn);
+    					
+    				}
+    			});
     	    	 
     	        
     	    } else {
-    	    	Notification.show("Usuario no registrado");
+    	    	Notification.show("Este usuario no esta registrado");
     	    }
     	});
+    
+    
         
     }
 

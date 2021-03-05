@@ -31,6 +31,8 @@ public class VistaCabecera extends PolymerTemplate<VistaCabecera.VistaCabeceraMo
 	private Button verCarrito;
 	@Id("login")
 	private Button login;
+	@Id("salir")
+	private Button salir;
 
 	/**
      * Creates a new VistaCabecera.
@@ -84,5 +86,13 @@ public class VistaCabecera extends PolymerTemplate<VistaCabecera.VistaCabeceraMo
 
 	public void setLogin(Button login) {
 		this.login = login;
+	}
+
+	public Button getSalir() {
+		return salir;
+	}
+
+	public void setSalir(Button salir) {
+		this.salir = salir;
 	}
 }

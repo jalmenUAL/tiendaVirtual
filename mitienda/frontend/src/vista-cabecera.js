@@ -1,8 +1,8 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
-import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@polymer/iron-icon/iron-icon.js';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 class VistaCabecera extends PolymerElement {
 
@@ -27,6 +27,9 @@ class VistaCabecera extends PolymerElement {
  </vaadin-button>
  <vaadin-button id="verCarrito">
    Ver Carrito 
+ </vaadin-button>
+ <vaadin-button id="salir">
+  Salir
  </vaadin-button>
 </vaadin-horizontal-layout>
 `;
