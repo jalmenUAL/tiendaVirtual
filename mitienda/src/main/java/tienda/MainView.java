@@ -6,6 +6,7 @@ import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -15,7 +16,9 @@ import com.vaadin.flow.server.PWA;
 import interfaz.Administrador;
 import interfaz.CibernautaNoRegistrado;
 import interfaz.CibernautaRegistrado;
+import interfaz.ListaProductos;
 import interfaz.Login;
+import interfaz.Producto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -51,9 +54,20 @@ public class MainView extends VerticalLayout {
 	CibernautaNoRegistrado cbn = new CibernautaNoRegistrado();
 	
     public MainView() {
-
-        add(cbn);
-        login();
+    	
+    	 
+    	//METHODS OF CLASSES
+    	//PANEL
+    	 
+    	
+    	
+    	
+    	 add(cbn);
+        
+         
+        
+        
+         login();
         
     }
     
@@ -64,12 +78,22 @@ public class MainView extends VerticalLayout {
         	cbn.layout.remove(cbn.lg);
         	cbn.layout.add(cbn.ccbn);
         	
+        	
+        	
+        	
+        	
     	    if (e.getUsername().equals("admin")) {
     	    	
     	    	Administrador ad = new Administrador();
     	    	remove(cbn);
     	    	add(ad);
+    	    	
+    	    	
+    	    	
+    	    	
+    	    	
     	    	ad.ccbn.getSalir().setVisible(true);
+    	    	
     	    	ad.ccbn.getSalir().addClickListener(new ComponentEventListener() {
     				@Override
     				public void onComponentEvent(ComponentEvent event) {
@@ -86,9 +110,16 @@ public class MainView extends VerticalLayout {
     	    }
     	    else if (e.getUsername().equals("usuario")) {
     	    	
+    	    	
     	    	CibernautaRegistrado cr = new CibernautaRegistrado();
     	    	remove(cbn);
     	    	add(cr);
+    	    	
+    	    	
+    	    	
+    	    	
+    	    	
+    	    	
     	    	cr.ccbn.getSalir().setVisible(true);
     	    	cr.ccbn.getSalir().addClickListener(new ComponentEventListener() {
     				@Override

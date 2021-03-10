@@ -6,6 +6,8 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.polymertemplate.PolymerTemplate;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.polymertemplate.Id;
+import com.vaadin.flow.dom.Element;
+import com.vaadin.flow.component.menubar.MenuBar;
 
 /**
  * A Designer generated component for the vista-listaproductos template.
@@ -17,8 +19,12 @@ import com.vaadin.flow.component.polymertemplate.Id;
 @JsModule("./src/vista-listaproductos.js")
 public class VistaListaproductos extends PolymerTemplate<VistaListaproductos.VistaListaproductosModel> {
 
-    @Id("listaProductos")
-	private HorizontalLayout listaProductos;
+     
+	 
+	@Id("HorizontalLayout")
+	private HorizontalLayout horizontalLayout;
+	 
+	 
 
 	/**
      * Creates a new VistaListaproductos.
@@ -34,11 +40,16 @@ public class VistaListaproductos extends PolymerTemplate<VistaListaproductos.Vis
         // Add setters and getters for template properties here.
     }
 
-	public HorizontalLayout getListaProductos() {
-		return listaProductos;
+	public HorizontalLayout getHorizontalLayout() {
+		return horizontalLayout;
 	}
 
-	public void setListaProductos(HorizontalLayout listaProductos) {
-		this.listaProductos = listaProductos;
+	public void setHorizontalLayout(HorizontalLayout horizontalLayout) {
+		this.horizontalLayout = horizontalLayout;
 	}
+
+	 
+	 
+
+	 
 }

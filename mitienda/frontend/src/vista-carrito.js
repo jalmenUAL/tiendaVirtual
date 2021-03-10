@@ -17,7 +17,7 @@ class VistaCarrito extends PolymerElement {
  <vaadin-horizontal-layout theme="spacing" id="vaadinHorizontalLayout">
   <label id="labelCarrito" style="align-self: stretch; flex-grow: 1;">Carrito</label>
   <vaadin-button theme="primary" id="cerrarCarrito">
-   Cerrar Carrito
+    Cerrar Carrito 
   </vaadin-button>
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>

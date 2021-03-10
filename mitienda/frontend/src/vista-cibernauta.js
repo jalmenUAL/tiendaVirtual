@@ -12,8 +12,7 @@ class VistaCibernauta extends PolymerElement {
         			width: 100%;
                 }
             </style>
-<vaadin-vertical-layout style="width: 100%; height: 100%; align-items: stretch;" id="layoutCibernauta">
-</vaadin-vertical-layout>
+<vaadin-vertical-layout style="width: 100%; height: 100%; align-items: stretch;" id="layoutCibernauta"></vaadin-vertical-layout>
 `;
     }
 
