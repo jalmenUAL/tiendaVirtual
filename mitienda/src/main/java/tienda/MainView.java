@@ -8,6 +8,7 @@ import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
@@ -56,10 +57,15 @@ public class MainView extends VerticalLayout {
     public MainView() {
     	
     	 
-    	//METHODS OF CLASSES
-    	//PANEL
+    	  //DIAGRAMAS DE SECUENCIA: ARRASTRAR, INTERFAZ (DONDE), FLECHAS, MÉTODOS, PARÁMETROS, RETORNOS
+    	  // HERENCIA ENTRE ACTORES
+    	 // HERENCIA ENTRE CASOS DE USO
     	 
-    	
+    	  
+    	  //COPIAR Y PEGAR
+    	  //MÉTODOS EXTRA
+    	  //SCROLLING
+    	  //CONSTRUCTORAS DE LAS COMPONENTES GRÁFICAS
     	
     	
     	 add(cbn);
@@ -68,6 +74,14 @@ public class MainView extends VerticalLayout {
         
         
          login();
+    	
+    	 
+
+
+    	
+        
+
+         
         
     }
     

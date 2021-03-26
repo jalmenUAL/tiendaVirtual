@@ -21,8 +21,11 @@ public class VistaListaproductos extends PolymerTemplate<VistaListaproductos.Vis
 
      
 	 
-	@Id("HorizontalLayout")
-	private HorizontalLayout horizontalLayout;
+	 
+	@Id("MainLayout")
+	private HorizontalLayout mainLayout;
+	@Id("Content")
+	private HorizontalLayout content;
 	 
 	 
 
@@ -40,13 +43,23 @@ public class VistaListaproductos extends PolymerTemplate<VistaListaproductos.Vis
         // Add setters and getters for template properties here.
     }
 
-	public HorizontalLayout getHorizontalLayout() {
-		return horizontalLayout;
+	public HorizontalLayout getMainLayout() {
+		return mainLayout;
 	}
 
-	public void setHorizontalLayout(HorizontalLayout horizontalLayout) {
-		this.horizontalLayout = horizontalLayout;
+	public void setMainLayout(HorizontalLayout mainLayout) {
+		this.mainLayout = mainLayout;
 	}
+
+	public HorizontalLayout getContent() {
+		return content;
+	}
+
+	public void setContent(HorizontalLayout content) {
+		this.content = content;
+	}
+
+	 
 
 	 
 	 

@@ -13,13 +13,20 @@ public class CibernautaRegistrado extends Cibernauta {
 	
 	public CibernautaRegistrado() {
 		
+		 inicializar();
+			 
+	}
+	
+	public void inicializar() {
+		
+		
 		 ccbn = new CabeceraRegistrado();	
 		 lpr = new ListaProductosRegistrado();
 		 layout = this.getLayoutCibernauta().as(VerticalLayout.class);
 		 layout.addComponentAsFirst(ccbn);
 		 layout.add(lpr);
 		 
-		 
+		 /* lpr.cargar_productos_registrado(); */
 		 
 		 
 		 cr = new Carrito();	
@@ -50,6 +57,6 @@ public class CibernautaRegistrado extends Cibernauta {
 				}
 			});
 		  
-		 
 	}
+	
 }

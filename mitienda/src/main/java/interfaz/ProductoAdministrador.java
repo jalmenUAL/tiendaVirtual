@@ -13,13 +13,26 @@ public class ProductoAdministrador extends Producto {
 		
 		super();
 		this.getAnadirCarrito().setVisible(false);
+		
+		 
+	}
+	
+	public void inicializar() {
+	
+		
+		
+		
+		
+		
 		this.getImagenProducto().setSrc("https://dummyimage.com/600x400/000/fff");
+		
+		
 		
 		this.getAnadirOferta().addClickListener(new ComponentEventListener() {
 			@Override
 			public void onComponentEvent(ComponentEvent event) {
 				 
-				Notification.show("Elemento Añadido a Ofertas");
+				anadir_oferta();
 				
 			}
 		});
@@ -28,11 +41,20 @@ public class ProductoAdministrador extends Producto {
 			@Override
 			public void onComponentEvent(ComponentEvent event) {
 				 
-				Notification.show("Elemento Eliminado de Ofertas");
+				quitar_oferta();
 				
 			}
 		});
-		 
 	}
+	
+	public void anadir_oferta() {
+		/* accede a la base de datos y añade el producto a las ofertas*/
+		
+	}
+	
+	public void quitar_oferta() {
+		/* accede a la base de datos y elimina el producto a las ofertas*/
+	}
+	
 	
 }

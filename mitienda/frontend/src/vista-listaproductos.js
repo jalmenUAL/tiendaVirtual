@@ -11,7 +11,9 @@ class VistaListaproductos extends PolymerElement {
                     height: 100%;
                 }
             </style>
-<vaadin-horizontal-layout theme="spacing" id="HorizontalLayout" style="width: 100%; height: 100%;"></vaadin-horizontal-layout>
+<vaadin-horizontal-layout theme="spacing" id="MainLayout" style="width: 100%; height: 100%;">
+ <vaadin-horizontal-layout theme="spacing" id="Content" style="width: 100%; height: 100%;"></vaadin-horizontal-layout>
+</vaadin-horizontal-layout>
 `;
     }
 

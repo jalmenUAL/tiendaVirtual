@@ -14,7 +14,7 @@ class VistaProducto extends PolymerElement {
         			
                 }
             </style>
-<vaadin-vertical-layout style="width: 100%; height: 100%;" id="layoutProducto">
+<vaadin-vertical-layout style="height: 100%; width: 100%;" id="layoutProducto">
  <img id="imagenProducto" style="flex-grow: 1; align-self: stretch; width: 100%; height: 100%;">
  <vaadin-horizontal-layout theme="spacing" id="pieProducto" style="align-self: stretch;">
   <vaadin-button theme="primary" id="anadirCarrito" style="flex-grow: 1;">

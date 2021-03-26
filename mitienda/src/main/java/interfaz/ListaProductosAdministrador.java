@@ -10,13 +10,13 @@ public class ListaProductosAdministrador extends ListaProductos {
 	{
 		
 		super();
-		 ProductoAdministrador p = new ProductoAdministrador();
+		 /*ProductoAdministrador p = new ProductoAdministrador();
 		 ProductoAdministrador p2 = new ProductoAdministrador();
 		 ProductoAdministrador p3 = new ProductoAdministrador();
 
 		 this.getHorizontalLayout().add(p);
 		 this.getHorizontalLayout().add(p2);
-		 this.getHorizontalLayout().add(p3);
+		 this.getHorizontalLayout().add(p3);*/
 
 		
 	}
