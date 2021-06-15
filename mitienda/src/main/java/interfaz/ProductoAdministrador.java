@@ -13,7 +13,8 @@ public class ProductoAdministrador extends Producto {
 		
 		super();
 		this.getAnadirCarrito().setVisible(false);
-		
+		this.getImagenProducto().setSrc("https://dummyimage.com/600x400/000/fff");
+
 		 
 	}
 	
@@ -24,7 +25,6 @@ public class ProductoAdministrador extends Producto {
 		
 		
 		
-		this.getImagenProducto().setSrc("https://dummyimage.com/600x400/000/fff");
 		
 		
 		
